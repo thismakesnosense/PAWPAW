@@ -10,7 +10,7 @@ if ("serviceWorker" in navigator) {
   self.addEventListener("install", function(event){
       event.waitUntil(
           caches.open("money").then(function(cache){
-              return cache.addAll(["/", "index.js", "service-worker.js", "styles.css", "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", "https://cdn.jsdelivr.net/npm/chart.js@2.8.0", "https://unpkg.com/dexie@2.0.4/dist/dexie.js"])
+              return cache.addAll(["/", "index.js", "service-worker.js", "styles.css", "fa/font-awesome-4.7.0/css/font-awesome.css", "https://cdn.jsdelivr.net/npm/chart.js@2.8.0", "https://unpkg.com/dexie@2.0.4/dist/dexie.js"])
           }) 
       )
   });
