@@ -137,8 +137,8 @@ function sendToserver(transaction){
     }
     else {
       // clear form
-      document.querySelector("t-name").value = "";
-      document.querySelector("t-amount").value = "";
+      document.querySelector("#t-name").value = "";
+      document.querySelector("#t-amount").value = "";
     }
   })
   .catch(err => {
@@ -146,8 +146,8 @@ function sendToserver(transaction){
     saveRecord(transaction);
 
     // clear form
-    nameEl.value = "";
-    amountEl.value = "";
+    document.querySelector("#t-name").value = "";
+    document.querySelector("#t-amount").value = "";
   });
 }
 
